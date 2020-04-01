@@ -14,7 +14,8 @@ void AChapter_03GameModeBase::BeginPlay()
 	action->ConditionalBeginDestroy();
 
 	// Force garbage collection
-	GetWorld()->ForceGarbageCollection( true ); 
+	// deprecated function: GetWorld()->ForceGarbageCollection( true );
+	GEngine->ForceGarbageCollection(true);
 
 
 	
